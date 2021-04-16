@@ -183,7 +183,7 @@ def choose_food(update, context):
 
 
 def main():
-    ubd = Updater("1447543344:AAEh5Fn-RDcMXaK_4l29aOkDFm7nNCaOWeY", use_context=True)
+    ubd = Updater("your token", use_context=True)
     dsp = ubd.dispatcher
     dsp.add_handler(CallbackQueryHandler(choose_food))
     conver_hand = ConversationHandler(
